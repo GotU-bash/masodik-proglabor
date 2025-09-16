@@ -7,13 +7,15 @@ megoldásokat fogadja el.
 WINDOWS RÉSZ:
 Nem kell linkelni semmit csupán: gcc main.c -o main.exe
 A "-o" az outputot rövidíti.
+Ha odarakjátok a -lm flaget az -o elé az ilyen good practice, bár elméletileg 
+mingw-nál semmit nem csinál.
 
 
 LINUXOS RÉSZ: (ha windowson vagy hagyd ki)
 A math.h nem része a C standard könyvtárának linuxon ezért a kód futtatásakor
 "linkelni" kell a fordítónak az alábbi módon: gcc main.c -lm -o main Ebből a
 "-lm" linkeli a math.h könyvtárat. (l = link, m = math) A "-o" az outputot
-rövidíti.
+rövidíti. Tehát: gcc main.c -lm -o main
 
 A fordításkor a main.c helyére a ti fájlotok nevét írjátok!!
 
