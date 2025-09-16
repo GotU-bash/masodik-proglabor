@@ -36,6 +36,7 @@ int main(void) {
   // mert az int egy egész típus és azzá castoljuk. (ha n nem
   // négyzetszám akkor tört lesz a végeredmény de a
   // castolással letudjuk vágni a tizedespont utánni részt)
+  // Röviden, a castolás egy valamilyen adattípusból egy másikká alakít.
 
   // Megnézzük, hogy az r változó négyzete egyenlő-e n-el és
   // ez alapján írunk ki.
