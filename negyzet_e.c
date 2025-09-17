@@ -29,6 +29,7 @@ int main(void) {
   scanf("%d", &n); // Beolvassuk a számot
 
   int r = (int)sqrt(n);
+  // Az sqrt egy a math.h-ban taláható négyzetgyök függvény, amely pontos eredményt ad tizedesponttal.
   // Az "(int)" kifejezés a négyzetgyök függvény előtt
   // "castolja" annak eredményét (visszatérési értékét).
   // Tehát amikor elvégzi a program ezt a sort akkor az r
